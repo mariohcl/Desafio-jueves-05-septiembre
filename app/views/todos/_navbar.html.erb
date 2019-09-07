@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="#">ToDo Form</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <%= link_to "Home", todos_path, class:'nav-link' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Lista", todos_list_path, class:'nav-link' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Nuevo", todos_new_path, class:'nav-link' %>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>

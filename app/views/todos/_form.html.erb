@@ -1,0 +1,16 @@
+<div class="card p-5 bg-light col-md-5">
+
+    <h1 class="main-tit">Ingresar datos</h1>
+
+  <%= form_with model: @todo, local: true do |f| %>
+
+    <%= f.label :description, "Descripción" %>
+    <%= f.text_area :description, class: 'form-control mb-2' %>
+
+    <%= f.label :completed, "Completado" %>
+    <%= f.check_box :completed, class: 'mb-2' %>
+
+    <%= f.submit "Enviar", class: 'btn btn-primary' %>
+
+  <% end %>
+</div>

@@ -1,0 +1,11 @@
+<div class="card p-5 bg-light">
+
+  <h1 class="show-single"> <%= @todo.description %> </h1>
+
+  <p class="status-single"><% if @todo.completed == true %><i class="far fa-thumbs-up"></i> Completado
+  <% else %><i class="far fa-thumbs-down"></i> No Completado
+  <% end %></p>
+
+  <%= link_to "Volver al listado", todos_list_path, class:'volver' %>
+
+</div>

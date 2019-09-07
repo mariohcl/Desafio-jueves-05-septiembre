@@ -1,0 +1,49 @@
+<div class="card p-5 bg-light">
+  <div class="row">
+
+
+<div class="col-md-6">
+
+  <h1 class="main-tit">Tareas por realizar</h1>
+
+    <div class="bloque-resultado">
+    <% @todos.each do |todo| %>
+      <% if todo.completed == false %>
+        <%= link_to todo.description, todo, class: 'description' %>
+
+          <%= link_to 'Completar', complete_path(todo), class: 'completar' %>
+          <%= link_to "Editar", todo_edit_path(todo), class: 'edit' %> <%= link_to "Borrar", todo, method: :delete, class: 'delete' %>
+
+          <% end %>
+
+    <% end %>
+
+    </div>
+
+</div>
+
+<div class="col-md-6">
+
+    <h1 class="main-tit">Tareas realizadas</h1>
+
+    <div class="bloque-resultado">
+    <% @todos.each do |todo| %>
+      <% if todo.completed == true %>
+        <%= link_to todo.description, todo, class: 'description' %>
+         <p class="completada"><i class="far fa-thumbs-up"></i> Completada</p>
+
+          <%= link_to "Editar", todo_edit_path(todo), class: 'edit' %> <%= link_to "Borrar", todo, method: :delete, class: 'delete' %>
+          <% end %>
+
+    <% end %>
+
+    </div>
+
+</div>
+
+
+
+
+
+  </div>
+</div>

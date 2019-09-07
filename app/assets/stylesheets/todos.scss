@@ -1,0 +1,87 @@
+// Place all the styles related to the todos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+  .main{
+    margin-top: 5%;
+  }
+
+  .main-tit{
+    font-size: 1.3em;
+    border-bottom: 1px solid #d6d6d6;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+  }
+
+.bloque-resultado{
+  background-color: white;
+  margin-bottom: 30px;
+  padding: 20px;
+  box-shadow: 3px 10px 10px #e0e0e0;
+  border-radius: 10px;
+
+  a.description{
+    display: block;
+    font-size: 1.3em;
+    color: #3b2c6f;
+    line-height: initial;
+    margin-bottom:0;
+  }
+  a.completar{
+    font-size: 0.9em;
+    color: #9191ff;
+    display: block;
+    margin-bottom: 0;
+    line-height: 2em;
+  }
+  a.edit{
+    font-size: 0.95em;
+    color: grey;
+    display: inline-block;
+    margin-bottom: 35px;
+  }
+  p.completada{
+    color: grey;
+    margin: 5px 0;
+    .far{
+      color: #2dd654;
+    }
+  }
+
+  .edit{
+    font-size: 0.8em;
+    color: grey;
+    display: inline-block;
+  }
+
+  .delete{
+    font-size: 0.9em;
+    color: red;
+    display: inline-block;
+  }
+
+
+  }
+  form{
+    display:flex;
+    flex-direction: column;
+    label{
+      font-size: 0.8em;
+      margin: 0;
+    }
+  }
+  .show-single{
+    color: #3b2c6f;
+    font-size: 1.5em;
+  }
+  .status-single{
+    font-size: 0.8em;
+    color: grey;
+  }
+  .volver{
+    font-size: 0.8em;
+    color: green;
+  }
+
+}
